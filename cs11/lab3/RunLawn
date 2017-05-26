@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# RunLawn
+# Kevin Lee    
+# 1480757
+# lab3
+# compiles Lawn.java and runs Lawn.class and  deletes Lawn.class
+#----------------------------------------
+#! /bin/bash
+#--------------------------------------
+# RunLawn
+#--------------------------------------
+echo "compiling Lawn.java"
+javac Lawn.java >& Lawn-errs
+echo "running Lawn.class."
+java Lawn < Lawn-in > Lawn-out
+echo "deleting Lawn.class"
+rm -rf Lawn.class

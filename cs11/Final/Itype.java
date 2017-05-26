@@ -1,0 +1,3 @@
+interface Itype{
+ void foo();
+}
